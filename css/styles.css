@@ -65,7 +65,8 @@ p {
   list-style-type: none;
 }
 
-.link{
+.link,
+{
   text-decoration: none;
 }
 
@@ -143,7 +144,8 @@ body {
 .our-team-title,
 .our-job-title,
 .section-name,
-.uppercase {
+.uppercase,
+.client-title{
   color: var(--title-text-color);
 }
 
@@ -199,7 +201,8 @@ body {
 }
 
 .our-team-title,
-.our-job-title {
+.our-job-title,
+.client-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -403,16 +406,47 @@ body {
 }
 
 
-.social-list-link:hover,
-.social-list-link:focus{
-  background-color: var(--special-color);
-   fill: #ffffff;
+.social-list-link:hover, 
+.social-list-link:focus {
+  background-color: var(--special-color); 
 }
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon{
+  fill:var(--white-color);
+}
+
+.social-list-icon:hover,
+.social-list-icon:focus
+{
+  fill: #ffffff;
+}
+
 .social-list-icon {
   width: 20px;
   height: 20px;
   fill:#AFB1B8;
 }
+
+
+
+.social-list__item:hover .social-list-icon,/* a + svg*/
+.social-list__item:focus .social-list-icon
+{
+  fill: var(--white-color);
+}
+
+.social-list__item:hover, /* a*/
+.social-list__item:focus {
+background-color: var(--special-color);
+}
+
+
+
+
+
+
+
 
 
 
@@ -428,11 +462,34 @@ body {
   display: flex;
   margin: 0 auto;
 }
+
+
+
+/* ================================ CLIENTS ================================*/
+
+.clients{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+
+
+
+
+
+
+
 /* ================================ FOOTER BLOCKS ================================*/
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  
 }
 .logo-web {
   font-style: normal;
@@ -444,6 +501,45 @@ body {
 
 .address-items:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.address{
+  padding-right: 70px ;
+}
+
+.social{
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.social-list__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.social-list__item:hover .social-list-icon,
+.social-list__item:focus .social-list-icon
+{
+  fill: var(--white-color);
+}
+
+.social-list__item:hover,
+.social-list__item:focus {
+background-color: var(--special-color);
+
 }
 
 /* ================================ ICONS ================================*/
