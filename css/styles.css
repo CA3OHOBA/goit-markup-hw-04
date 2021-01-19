@@ -406,14 +406,14 @@ body {
 
 .social-list-link:hover{
   background-color: var(--special-color);
+   fill: #ffffff;
 }
 .social-list-icon {
   width: 20px;
   height: 20px;
+  fill:#AFB1B8;
 }
-.social-list-icon{
-  fill: #ffffff;
-}
+
 
 
 .team-list-content-wrapper {
