@@ -350,7 +350,6 @@ body {
 /* ================================ OUR TEAM BLOCKS ================================*/
 
 .our-team-title {
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -378,8 +377,8 @@ body {
 
 .team-section {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
-
 .section-name {
 
   margin-bottom: 10px;
@@ -431,6 +430,7 @@ body {
 /* ================================ FOOTER BLOCKS ================================*/
 
 .footer {
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 .logo-web {
@@ -438,7 +438,6 @@ body {
 }
 
 .logo-web-part {
-  padding-top: 60px;
   padding-bottom: 20px;
 }
 
