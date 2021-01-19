@@ -59,6 +59,16 @@ p {
   margin: 0;
 }
 
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.link{
+  text-decoration: none;
+}
+
 ul,
 ol {
   margin: 0;
@@ -278,9 +288,13 @@ body {
 
 /* ================================ HERO BLOCKS ================================*/
 .hero {
+  width: 1600px;
+  margin: 0 auto;
   padding-top: 200px;
   height: 600px;
   padding-bottom: 94px;
+  background-image: url("../images/hero.jpg");
+  background-repeat: no-repeat;
 }
 .hero-title {
   margin-bottom: 30px;
@@ -351,15 +365,12 @@ body {
   margin-top: -30px;
 }
 
-.list {
-  padding: 0;
-  margin: 0;
-}
 
 .our-team-items {
   border-radius: 4px;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    background-color: #fff;
 }
 .our-team-items:not(:last-child) {
   margin-right: 30px;
@@ -370,7 +381,7 @@ body {
 }
 
 .section-name {
-  margin-top: 30px;
+
   margin-bottom: 10px;
 }
 
@@ -378,6 +389,45 @@ body {
   margin-bottom: 30px;
 }
 
+.social-list {
+  display: flex;
+}
+
+.social-list-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color:var(--white-color);
+  border-radius: 50%;
+}
+
+
+.social-list-link:hover{
+  background-color: var(--special-color);
+}
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+}
+.social-list-icon{
+  fill: #ffffff;
+}
+
+
+.team-list-content-wrapper {
+  padding-top: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  justify-content: space-between; /* ПОЧЕМУ НЕ РАБОТАЕТ */
+}
+
+.social-list-item{  /* КОСТЫЛЬ space-between */
+  display: flex;
+  margin: 0 auto;
+}
 /* ================================ FOOTER BLOCKS ================================*/
 
 .footer {
@@ -395,3 +445,16 @@ body {
 .address-items:not(:last-child) {
   margin-bottom: 9px;
 }
+
+/* ================================ ICONS ================================*/
+
+
+
+ /* для Постоянные клиенты указывать <svg width="" height="" 
+
+ для инсты и тд обращаться через класс 
+
+ создавать класс link и класс list отдельно с правилами и добавлять эти классы ко всем линкам/листам в будущем
+
+
+
