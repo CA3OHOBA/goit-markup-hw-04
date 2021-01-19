@@ -403,7 +403,8 @@ body {
 }
 
 
-.social-list-link:hover{
+.social-list-link:hover,
+.social-list-link:focus{
   background-color: var(--special-color);
    fill: #ffffff;
 }
@@ -456,4 +457,4 @@ body {
  создавать класс link и класс list отдельно с правилами и добавлять эти классы ко всем линкам/листам в будущем
 
 
-
+#AFB1B8 цвет клиента 4 
