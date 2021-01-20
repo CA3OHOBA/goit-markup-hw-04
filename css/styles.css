@@ -283,17 +283,25 @@ body {
 
 .navigation-contact-icon {
   fill: currentColor;
+  display: inline-block;
+ background-size: contain;
+ background-position: center;
+
 }
 
-.navigation-list .navigation-contact-icon{
+.navigation-contact .navigation-contact-icon{
   margin-right: 10px;
- 
+ display: inline-block;
+ background-size: contain;
+ background-position: center;
 
 }
 
 .navigation-list-items:not(:last-child) {
   margin-right: 30px;
 }
+
+
 /* ================================ HERO BLOCKS ================================*/
 .hero {
   width: 1600px;
@@ -340,6 +348,14 @@ body {
 
 .specials {
   padding-bottom: 94px;
+}
+
+.hidden-list-items::before{
+  display: block;
+  content: "";
+  width: 100%;
+  background-color: #f5f4fa;
+  background-image: url(/images/);
 }
 
 /* ================================ WHAT-WE-DO BLOCKS ================================*/
@@ -481,13 +497,29 @@ background-color: var(--special-color);
   padding-bottom: 94px;
 }
 
+.icon{
+  fill: #AFB1B8;
+}
 
 
+.company-1,
+.company-2,
+.company-3,
+.company-4,
+.company-5,
+.company-6{
+  display: block;
+}
 
+.company .company-box{
+  width: calc((100% /6) - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
 
+.company-logo:hover .icon{
 
-
-
+}
 /* ================================ FOOTER BLOCKS ================================*/
 
 .footer {
