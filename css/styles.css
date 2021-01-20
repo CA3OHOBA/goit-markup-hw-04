@@ -26,12 +26,10 @@
 .navigation-list-link,
 .navigation-list-link .studio-link,
 .logo-web,
-.header-mail,
+.navigation-contact,
 .header-phone,
 .button,
 .address-link,
-.footer-mail,
-.footer-phone,
 .card-person-list {
   text-decoration: none;
 }
@@ -101,11 +99,12 @@ img {
 
 .logo-web,
 .studio-link,
-.header-mail {
+.navigation-contact {
   color: var(--special-color);
 }
 
 .header-phone,
+.navigation-contact,
 p,
 body {
   color: var(--primary-text-color);
@@ -121,22 +120,14 @@ body {
 .button {
   background-color: var(--special-color);
   border: none;
-
   min-width: 200px;
-
   padding: 10px;
-
   background: var(--special-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
   cursor: pointer;
 }
 
-.footer-mail,
-.footer-phone {
-  color: rgba(255, 255, 255, 0.6);
-}
 
 .logo-web > .logo-studio,
 .header-logo-studio,
@@ -166,7 +157,7 @@ body {
   line-height: 1.19;
 }
 
-.header-mail,
+.navigation-contact,
 .header-phone,
 .navigation-list-link,
 .footer-mail,
@@ -223,8 +214,7 @@ body {
 }
 
 .address-link,
-.footer-mail,
-.footer-phone {
+.navigation-contact {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -239,15 +229,15 @@ body {
 .navigation-list-link:focus,
 .navigation-list-link.studio-link:hover,
 .navigation-list-link.studio-link:focus,
-.header-phone:hover,
-.header-phone:focus,
 .footer-logo-studio:hover,
-.footer-logo-studio:focus {
+.footer-logo-studio:focus,
+.navigation-contact:hover,
+.navigation-contact:focus
+{
   color: var(--special-color);
 }
 
-.header-mail:hover,
-.header-mail:focus,
+
 .studio-link:hover,
 .studio-link:focus,
 .button:hover,
@@ -289,6 +279,21 @@ body {
   margin-right: 92px;
 }
 
+
+
+.navigation-contact-icon {
+  fill: currentColor;
+}
+
+.navigation-list .navigation-contact-icon{
+  margin-right: 10px;
+ 
+
+}
+
+.navigation-list-items:not(:last-child) {
+  margin-right: 30px;
+}
 /* ================================ HERO BLOCKS ================================*/
 .hero {
   width: 1600px;
@@ -386,8 +391,8 @@ body {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-.section-name {
 
+.section-name {
   margin-bottom: 10px;
 }
 
