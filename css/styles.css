@@ -281,19 +281,17 @@ body {
 
 
 
-.navigation-contact-icon {
+.navigation-contact-icon { 
   fill: currentColor;
-  display: inline-block;
- background-size: contain;
- background-position: center;
+  margin-right: 10px;
+  display:inline-block;
+   align-items:center;
 
 }
 
-.navigation-contact .navigation-contact-icon{
-  margin-right: 10px;
- display: inline-block;
- background-size: contain;
- background-position: center;
+.navigation-contact {
+  display: flex;
+align-items: center;
 
 }
 
