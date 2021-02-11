@@ -247,6 +247,15 @@ img {
   margin-right: 0;
 }
 
+.features-list-item::before{
+  display: block;
+  content: '';
+  height: 120px;
+  outline: 1px solid teal;
+  margin-bottom: 30px;
+  background-image: url(../images/);
+}
+
 .features-list-item .title {
   color: var(--primary-text-color);
   font-weight: 700;
