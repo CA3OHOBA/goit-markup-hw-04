@@ -251,9 +251,26 @@ img {
   display: block;
   content: '';
   height: 120px;
-  outline: 1px solid teal;
   margin-bottom: 30px;
-  background-image: url(../images/);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-backround-color);
+}
+
+.antenna::before{
+  background-image: url(../images/antenna.png);
+}
+
+.clock::before{
+  background-image: url(../images/clock.png);
+}
+
+.diagram::before{
+  background-image: url(../images/diagram.png);
+}
+
+.astronaut::before{
+  background-image: url(../images/astronaut.png);
 }
 
 .features-list-item .title {
