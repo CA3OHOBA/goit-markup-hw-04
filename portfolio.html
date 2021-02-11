@@ -3,115 +3,196 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Студия</title>
+    <title>Портфолио</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+  <body class="page">
+    <!--- HEADER -->
 
-  <body>
-    <header class="header">
-      <div class="container">
-        <nav class="navigation">
-          <a class="logo-web" href="./index.html">Web<span class="header-logo-studio">Studio</span></a>
-
-          <ul class="navigation-list">
-            <li class="navigation-list-items">
-              <a class="navigation-list-link studio-link" href="index.html">Студия</a>
+    <header class="page-header">
+      <div class="container header-container">
+        <nav class="site-nav">
+          <a class="logo" href="./index.html" lang="en"
+            ><span class="logo-web">Web</span><span class="studio">Studio</span></a
+          >
+          <ul class="menu-list hover">
+            <li class="menu-list-item">
+              <a class="link" href="./index.html">Студия</a>
             </li>
-            <li class="navigation-list-items"><a class="navigation-list-link" href="./portfolio.html">Портфолио</a></li>
-            <li class="navigation-list-items"><a class="navigation-list-link" href="">Контакты</a></li>
+            <li class="menu-list-item">
+              <a class="link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="menu-list-item"><a class="link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <div>
-          <ul class="navigation-list">
-            <li class="navigation-list-items">
-              <a href="mailto:info@devstudio.com" class="header-mail">info@devstudio.com</a>
+
+        <address class="hover">
+          <ul class="header-contacts">
+            <li class="header-contact-item">
+              <a class="header-contact-link" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a>
             </li>
-            <li class="navigation-list-items">
-              <a href="tel:+380961111111" class="header-phone">+38 096 111 11 11</a>
+            <li class="header-contact-item">
+              <a class="header-contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+    <!---  /HEADER -->
+    <!--- (MAIN)   -->
+
+    <main>
+      <!--- SECTION 1.1 NAV -  -->
+
+      <section class="portfolio section">
+        <div class="container">
+          <h1 class="hidden">Портфолио</h1>
+          <ul class="filter-list">
+            <li class="filter-list-item">
+              <button type="button" class="filter-button">Все</button>
+            </li>
+            <li class="filter-list-item">
+              <button type="button" class="filter-button">Веб-сайты</button>
+            </li>
+            <li class="filter-list-item">
+              <button type="button" class="filter-button">Приложения</button>
+            </li>
+            <li class="filter-list-item">
+              <button type="button" class="filter-button">Дизайн</button>
+            </li>
+            <li class="filter-list-item">
+              <button type="button" class="filter-button">Маркетинг</button>
             </li>
           </ul>
         </div>
-      </div>
-    </header>
 
-    <main>
-      <div class="container">
-        <section class="portfolio-page">
-          <ul class="filters">
-            <li>Все</li>
-            <li>Веб-сайты</li>
-            <li>Приложения</li>
-            <li>Дизайн</li>
-            <li>Маркетинг</li>
+        <!--- END SECTION 1.1 NAV   -->
+        <!--- SECTION 1.2 PICS  -->
+        <div class="container">
+          <ul class="portfolio-section-list">
+            <li class="portfolio-section-item">
+              <a href="" class="portfolio-section-link">
+                <img src="./images/img(01).jpg" alt="Технокряк" />
+                <div class="portfolio-div">
+                  <h4 class="title">Технокряк</h4>
+                  <p class="type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-section-item">
+              <a href="" class="portfolio-section-link">
+                <img src="./images/img(02).jpg" alt="Постер New Orlean vs Golden Star" />
+                <div class="portfolio-div">
+                  <h4 class="title">Постер <span lang="en">New Orlean vs Golden Star</span></h4>
+                  <p class="type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-section-item">
+              <a href="" class="portfolio-section-link">
+                <img src="./images/img(03).jpg" alt="Ресторан Seafood" />
+                <div class="portfolio-div">
+                  <h4 class="title">Ресторан <span lang="en">Seafood</span></h4>
+                  <p class="type">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-section-item">
+              <a href="" class="portfolio-section-link">
+                <img src="./images/img(04).jpg" alt="Проект Prime" />
+                <div class="portfolio-div">
+                  <h4 class="title">Проект <span lang="en">Prime</span></h4>
+                  <p class="type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-section-item">
+              <a href="" class="portfolio-section-link">
+                <img src="./images/img(05).jpg" alt="Проект Boxes" />
+                <div class="portfolio-div">
+                  <h4 class="title">Проект <span lang="en">Boxes</span></h4>
+                  <p class="type">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-section-item">
+              <a href="" class="portfolio-section-link">
+                <img src="./images/img(06).jpg" alt="Inspiration has no Borders" />
+                <div class="portfolio-div">
+                  <h4 class="title" lang="en">Inspiration has no Borders</h4>
+                  <p class="type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-section-item">
+              <a href="" class="portfolio-section-link">
+                <img src="./images/img(07).jpg" alt="Издание Limited Edition" />
+                <div class="portfolio-div">
+                  <h4 class="title">Издание <span lang="en">Limited Edition</span></h4>
+                  <p class="type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-section-item">
+              <a href="" class="portfolio-section-link">
+                <img src="./images/img(08).jpg" alt="Проект LAB" />
+                <div class="portfolio-div">
+                  <h4 class="title">Проект LAB</h4>
+                  <p class="type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-section-item">
+              <a href="" class="portfolio-section-link">
+                <img src="./images/img(09).jpg" alt="Growing Business" />
+                <div class="portfolio-div">
+                  <h4 class="title" lang="en">Growing Business</h4>
+                  <p class="type">Приложение</p>
+                </div>
+              </a>
+            </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
+
+      <!--- END SECTION 1.2 PICS   -->
     </main>
+
+    <!-- (/MAIN) -- END    -->
+    <!--  FOOTER   -->
 
     <footer class="footer">
       <div class="container">
-        <div class="address">
-          <address class="logo-web-part">
-            <a class="logo-web" href="./index.html">Web<span class="footer-logo-studio">Studio</span></a>
-          </address>
-          <address class="address-tel-phone-part">
-            <ul class="address-tel-phone-title">
-              <li class="address-items">
-                <a class="address-link" href="https://goo.gl/maps/fWL3BSJ1ohqKeN6d9">
-                  г. Киев, пр-т Леси Украинки, 26</a
-                >
-              </li>
-              <li class="address-items">
-                <a href="mailto:info@devstudio.cpm" class="footer-mail">info@devstudio.com</a>
-              </li>
-              <li class="address-items"><a href="tel:+380961111111" class="footer-phone">+38 096 111 11 11</a></li>
-            </ul>
-          </address>
-        </div>
-        <div class="footer-social">
-          <h3 class="social">присоединяйтесь</h3>
-          <ul class="social-list">
-            <li class="social-list_item list">
-              <a href="#" class="social-list__item">
-                <svg class="social-list-icon">
-                  <use href="./images/sprite.svg#instagram"></use>
-                </svg>
-              </a>
+        <nav>
+          <a class="logo" href="./index.html" lang="en"><span class="logo-web">Web</span>Studio</a>
+        </nav>
+
+        <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+        <address class="hover">
+          <ul>
+            <li>
+              <a class="link" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a>
             </li>
-            <li class="social-list_item list">
-              <a href="#" class="social-list__item">
-                <svg class="social-list-icon">
-                  <use href="./images/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list_item list">
-              <a href="#" class="social-list__item">
-                <svg class="social-list-icon">
-                  <use href="./images/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list_item list">
-              <a href="#" class="social-list__item">
-                <svg class="social-list-icon">
-                  <use href="./images/sprite.svg#linkedin"></use>
-                </svg>
-              </a>
+            <li>
+              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
-        </div>
+        </address>
       </div>
     </footer>
+    <!--  END FOOTER   -->
   </body>
 </html>
