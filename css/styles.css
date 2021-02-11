@@ -247,6 +247,9 @@ img {
   margin-right: 0;
 }
 
+
+/* ICONS */
+
 .features-list-item::before{
   display: block;
   content: '';
@@ -258,22 +261,25 @@ img {
 }
 
 .antenna::before{
-  background-image: url(../images/antenna.png);
+  background-image: url(../images/antenna.svg);
 }
 
 .clock::before{
-  background-image: url(../images/clock.png);
+  background-image: url(../images/clock.svg);
 }
 
 .diagram::before{
-  background-image: url(../images/diagram.png);
+  background-image: url(../images/diagram.svg);
 }
 
 .astronaut::before{
-  background-image: url(../images/astronaut.png);
+  background-image: url(../images/astronaut.svg);
 }
 
-.features-list-item .title {
+
+
+
+.features-list-item .title{
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -367,6 +373,15 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+.footer-container{
+  display: flex;
+}
+
+.footer.container{
+  padding-left: 215px;
+}
+
 .footer .logo {
   color: var(--white-color);
   margin-bottom: 20px;
@@ -385,6 +400,63 @@ img {
 }
 
 
+
+.footer-socials{
+ margin-left: 70px;
+ padding-top: 9px;
+}
+
+.footer-title{
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
+.footer-soc-links{
+  display: flex;
+}
+
+.footer-soc-link-item:not(:last-child){
+  margin-right: 10px;
+}
+
+
+/* ICONS  */
+
+.footer-soc-icons{
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-color:rgba(255, 255, 255, 0.1);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position:center;
+  border-radius: 50%;
+  
+}
+
+.inst{
+ background-image: url(../images//instagram-w.svg);
+}
+.twit{
+ background-image: url(../images/twitter-w.svg);
+}
+.fb{
+  background-image: url(../images/facebook-w.svg);
+}
+.li {
+ background-image: url(../images/linkedin-w.svg);
+}
+
+
+.footer-soc-icons:hover,
+.footer-soc-icons:focus{
+  background-color:var(--brand-color);
+}
 
 /*------------------- PORTFOLIO -------------------*/
 
