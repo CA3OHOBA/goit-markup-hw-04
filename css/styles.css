@@ -45,7 +45,11 @@ img {
   width: 100%;
 }
 
-
+/* img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} */
 
 .container{
   width: 1200px;
@@ -444,6 +448,7 @@ background-color: var(--special-color);
 /* ICONS  */
 
 .our-clients-item{
+  display: block;
   content: '';
   width: 170px;
   height: 90px;
@@ -457,9 +462,12 @@ background-color: var(--special-color);
   margin-right: 30px;
 }
 
-.clients-svg:hover{
+.clients-icon:hover{
   fill: var(--brand-color);
+}
 
+.clients-icon:hover svg{
+  fill: var(--brand-color);
 }
 
 /* .clients-icon:hover ,
