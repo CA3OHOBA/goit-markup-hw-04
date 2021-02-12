@@ -140,7 +140,9 @@ img {
 .site-nav .link{
   padding-top: 32px;
   padding-bottom: 32px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  fill: currentColor;
 }
 
 .menu-list-item:not(:last-child){
@@ -423,6 +425,11 @@ img {
 .social-list__item:focus .social-list-icon
 {
   fill: var(--white-color);
+}
+
+
+.social-list-item:not(:last-child){
+  margin-right: 10px;
 }
 
 .social-list__item:hover, /* a*/
