@@ -129,6 +129,7 @@ img {
 
 .menu-list{
   display: flex;
+  align-items: center;
 }
 
 .header-contact-item .header-contact-link,
@@ -175,7 +176,12 @@ img {
   color: var(--brand-color);
 }
 
-
+.navigation-contact-icon { 
+  margin-right: 10px;
+  display:inline-block;
+  align-items:center;
+  background-size: contain;
+}
 
 
 
